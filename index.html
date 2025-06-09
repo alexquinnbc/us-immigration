@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Path to the USA | Immigrant Guide</title>
+    <style>
+        /* --- Basic Setup & Fonts --- */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #005A9C; /* A professional blue */
+            --secondary-color: #112E51; /* A dark navy for text */
+            --accent-color: #FDB81E; /* A warm yellow accent */
+            --light-gray: #f4f4f4;
+            --medium-gray: #e0e0e0;
+            --dark-gray: #333;
+            --danger-color: #D32F2F;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: #fff;
+        }
+
+        /* --- Main Layout & Containers --- */
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 2rem;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: var(--primary-color);
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        .page-section {
+            padding: 1.5rem;
+            background-color: #fff;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--medium-gray);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* --- Typography & Content Styling --- */
+        h2 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p, ul, li {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-position: inside;
+        }
+
+        strong {
+            color: var(--secondary-color);
+        }
+
+        .disclaimer {
+            background-color: #fffbe6;
+            border-left: 5px solid var(--danger-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            font-weight: bold;
+        }
+
+        .policy-alert {
+            background-color: #fce4e4;
+            border-left: 5px solid var(--danger-color);
+            padding: 1rem;
+        }
+
+        /* --- Interactive Elements --- */
+        .interactive-tool {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        
+        .interactive-tool label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--medium-gray);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: none;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .results {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #e3f2fd;
+            border: 1px solid var(--primary-color);
+            border-radius: 4px;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>⭐ Your Path to the USA ⭐</h1>
+            <p>Your Trusted Guide to Understanding U.S. Immigration</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#pathway-finder" class="nav-link">Find My Pathway</a>
+            <a href="#legal-pathways" class="nav-link">Legal Pathways</a>
+            <a href="#know-your-rights" class="nav-link">Know Your Rights</a>
+            <a href="#resources" class="nav-link">Resources & News</a>
+            <a href="#glossary" class="nav-link">Glossary</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- HOME SECTION -->
+        <section id="home-content" class="page-section">
+            <div class="disclaimer">
+                <strong>CRITICAL DISCLAIMER:</strong> THIS WEBSITE PROVIDES GENERAL INFORMATION ONLY. IT IS NOT LEGAL ADVICE. Immigration law is complex and changes frequently. This website is not a substitute for consultation with a qualified immigration attorney.
+            </div>
+            <h2>Welcome!</h2>
+            <p><strong>Our Mission:</strong> To empower you with clear, trustworthy, and accessible information about the U.S. immigration system. We translate complex legal pathways into simple, actionable steps, helping you understand your options based on the core American principles of family reunification, economic contribution, humanitarian protection, and diversity.</p>
+            <h3>How to Use This Site:</h3>
+            <ul>
+                <li><strong>We Simplify Official Information:</strong> We break down government rules into easy-to-understand language.</li>
+                <li><strong>This Is NOT Legal Advice:</strong> We are a guide, not lawyers. Always consult a qualified attorney for your specific case.</li>
+                <li><strong>Find Your Specific Path:</strong> Use our "Find My Pathway" tool to focus on the information relevant to you.</li>
+            </ul>
+        </section>
+
+        <!-- PATHWAY FINDER SECTION -->
+        <section id="pathway-finder-content" class="page-section hidden">
+            <h2>➡️ Find My Pathway</h2>
+            <p>This tool asks simple questions to guide you to the information most relevant to your unique situation. Answer the questions below to see potential pathways.</p>
+            <div class="interactive-tool">
+                <label for="q1">1. Are you currently inside the United States?</label>
+                <select id="q1">
+                    <option value="select">-- Select --</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="q2">2. Do you have a close family member who is a U.S. Citizen or Green Card Holder?</label>
+                <select id="q2">
+                    <option value="select">-- Select --</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="q3">3. Do you have a job offer, an advanced degree, or significant funds to invest?</label>
+                <select id="q3">
+                    <option value="select">-- Select --</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="q4">4. Do you have a well-founded fear of persecution if you were to return to your home country?</label>
+                <select id="q4">
+                    <option value="select">-- Select --</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button id="find-path-btn">Show My Potential Pathways</button>
+                <div id="wizard-results" class="results hidden"></div>
+            </div>
+        </section>
+
+        <!-- LEGAL PATHWAYS SECTION -->
+        <section id="legal-pathways-content" class="page-section hidden">
+            <h2>📚 Legal Pathways Explained</h2>
+            <p>This section explains the main ways individuals can become Lawful Permanent Residents (LPRs), also known as getting a "Green Card". The U.S. grants up to 675,000 permanent immigrant visas annually, although some categories have no limits.</p>
+
+            <h3>Family-Based Immigration</h3>
+            <p>This is the cornerstone of the U.S. system (58% of new LPRs in FY 2022). The process usually starts with a U.S. Citizen or LPR filing Form I-130.</p>
+            <ul>
+                <li><strong>Immediate Relatives of U.S. Citizens:</strong> NO ANNUAL CAPS. Includes spouses, unmarried children under 21, and parents of adult citizens.</li>
+                <li><strong>Family Preference Categories:</strong> SUBJECT TO ANNUAL LIMITS and long waits. Includes adult children, married children, and siblings of U.S. Citizens, and spouses/children of LPRs.</li>
+            </ul>
+
+            <h3>Employment-Based Immigration</h3>
+            <p>For immigrants with skills valuable to the U.S. economy (140,000 visas per year cap).</p>
+            <ul>
+                <li><strong>EB-1:</strong> Extraordinary ability, outstanding professors, multinational executives.</li>
+                <li><strong>EB-2:</strong> Advanced degrees or exceptional ability.</li>
+                <li><strong>EB-3:</strong> Skilled workers, professionals.</li>
+                <li><strong>EB-4 & EB-5:</strong> Special immigrants and investors.</li>
+            </ul>
+
+            <h3>Humanitarian Protection</h3>
+            <p>For those with a "well-founded fear of persecution" due to race, religion, nationality, social group, or political opinion. Eligible for LPR status after one year.</p>
+            <ul>
+                <li><strong>Refugees:</strong> Apply from outside the U.S.</li>
+                <li><strong>Asylees:</strong> Apply from inside the U.S. or at a port of entry.</li>
+                <li><strong class="danger-color">CAUTION:</strong> Asylum access is subject to extreme and frequent policy changes. See our Policy Alerts and seek legal help immediately.</li>
+                <li><strong>Other Relief (TPS, DACA):</strong> These are temporary and DO NOT automatically lead to a Green Card.</li>
+            </ul>
+
+            <h3>Diversity Visa Program (The "Lottery")</h3>
+            <p>A random lottery for 55,000 visas annually for individuals from countries with low rates of immigration to the U.S.</p>
+            
+            <div class="interactive-tool">
+                <h3>Document Checklist Generator</h3>
+                <p>Select a pathway to see a general list of required documents. This is not a substitute for official USCIS instructions.</p>
+                <label for="checklist-pathway">Select a Petition Type:</label>
+                <select id="checklist-pathway">
+                    <option value="select">-- Choose a pathway --</option>
+                    <option value="I-130-Spouse">I-130 Petition for a Spouse</option>
+                    <option value="I-130-Parent">I-130 Petition for a Parent</option>
+                    <option value="I-140-EB2">I-140 Employment-Based (General)</option>
+                </select>
+                <button id="generate-checklist-btn">Generate Checklist</button>
+                <div id="checklist-results" class="results hidden"></div>
+            </div>
+        </section>
+
+        <!-- KNOW YOUR RIGHTS SECTION -->
+        <section id="know-your-rights-content" class="page-section hidden">
+            <h2>⚖️ Know Your Rights</h2>
+            <div class="disclaimer">
+                The following is GENERAL information about constitutional rights, NOT legal advice. Always consult an attorney.
+            </div>
+            <h3>You have the right to remain silent.</h3>
+            <p>If an immigration (ICE, CBP) or police officer asks you questions, you can say, "I wish to remain silent and speak to an attorney." You do not have to answer questions about your immigration status.</p>
+            <h3>If an Agent Comes to Your Home:</h3>
+            <ul>
+                <li>Do not open your door.</li>
+                <li>Ask them to show you a warrant signed by a judge through a window or under the door.</li>
+                <li>You have the right to remain silent through the closed door.</li>
+            </ul>
+            <h3>If You Are Stopped in a Car or Public Place:</h3>
+            <ul>
+                <li>Ask "Am I free to leave?" If yes, calmly leave.</li>
+                <li>You can say, "I do not consent to a search."</li>
+                <li>Do not provide false documents. It is better to provide nothing and remain silent.</li>
+            </ul>
+        </section>
+
+        <!-- RESOURCES SECTION -->
+        <section id="resources-content" class="page-section hidden">
+            <h2>📰 Resources & News</h2>
+            <h3>Understanding the Visa Bulletin</h3>
+            <p>The Visa Bulletin is the government's waiting list for green cards in capped categories. Your "Priority Date" is your place in line. You must wait for the "Final Action Date" on the chart to pass your priority date before a green card can be issued.</p>
+            <p>The "Per-Country Ceiling" (7% cap per country) can cause much longer waits for people from high-demand countries like India, China, Mexico, and the Philippines.</p>
+            
+            <h3>Current Policy Alerts</h3>
+            <div class="policy-alert">
+                <strong>POLICY ALERT: ASYLUM PATHWAYS</strong><br>
+                Access to asylum has been severely restricted by changing policies. Our sources note the implementation of new restrictions such as "transit bans" and the ability to temporarily bar requests. Navigating asylum is extremely difficult and requires immediate legal guidance.
+            </div>
+            
+            <h3>Official Links</h3>
+            <ul>
+                <li><a href="https://www.uscis.gov" target="_blank">U.S. Citizenship and Immigration Services (USCIS)</a></li>
+                <li><a href="https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html" target="_blank">Department of State - Visa Bulletin</a></li>
+                <li><a href="https://www.ice.gov" target="_blank">U.S. Immigration and Customs Enforcement (ICE)</a></li>
+                <li><a href="https://www.cbp.gov" target="_blank">U.S. Customs and Border Protection (CBP)</a></li>
+            </ul>
+        </section>
+
+        <!-- GLOSSARY SECTION -->
+        <section id="glossary-content" class="page-section hidden">
+            <h2>📖 Glossary of Terms</h2>
+            <ul>
+                <li><strong>LPR (Lawful Permanent Resident):</strong> A "Green Card" holder.</li>
+                <li><strong>USCIS (U.S. Citizenship and Immigration Services):</strong> The agency that handles petitions.</li>
+                <li><strong>INA (Immigration and Nationality Act):</strong> The main body of U.S. immigration law.</li>
+                <li><strong>Priority Date:</strong> Your place in the waiting line for a visa.</li>
+                <li><strong>Visa Bulletin:</strong> The monthly publication showing who is at the front of the line.</li>
+                <li><strong>Immediate Relative:</strong> Spouse, minor child, or parent of a U.S. citizen. Not subject to visa caps.</li>
+                <li><strong>Adjustment of Status:</strong> Applying for a Green Card from within the U.S.</li>
+                <li><strong>Consular Processing:</strong> Applying for a visa/Green Card from an embassy outside the U.S.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer style="text-align: center; padding: 2rem; background-color: var(--light-gray); margin-top: 2rem;">
+        <p>Your Path to the USA © 2024 | Informational Purposes Only - Not Legal Advice</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageSections = document.querySelectorAll('.page-section');
+
+            // --- Navigation Logic ---
+            function showPage(pageId) {
+                pageSections.forEach(section => {
+                    section.classList.add('hidden');
+                });
+                const activePage = document.getElementById(pageId + '-content');
+                if (activePage) {
+                    activePage.classList.remove('hidden');
+                }
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + pageId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = link.getAttribute('href').substring(1);
+                    showPage(pageId);
+                });
+            });
+
+            // Show home page by default
+            showPage('home');
+
+            // --- Pathway Finder Wizard Logic ---
+            const findPathBtn = document.getElementById('find-path-btn');
+            const wizardResultsDiv = document.getElementById('wizard-results');
+
+            findPathBtn.addEventListener('click', () => {
+                const q1_inUS = document.getElementById('q1').value;
+                const q2_family = document.getElementById('q2').value;
+                const q3_job = document.getElementById('q3').value;
+                const q4_fear = document.getElementById('q4').value;
+
+                let resultsHTML = '<h4>Based on your answers, here are some potential pathways to explore:</h4><ul>';
+                let hasResults = false;
+
+                if (q2_family === 'yes') {
+                    resultsHTML += '<li><strong>Family-Based Immigration:</strong> Since you have a close family member who is a citizen or LPR, this is a primary pathway to explore.</li>';
+                    hasResults = true;
+                }
+                if (q3_job === 'yes') {
+                    resultsHTML += '<li><strong>Employment-Based Immigration:</strong> With a job offer or special skills, you may be eligible for an employment-based green card.</li>';
+                    hasResults = true;
+                }
+                if (q4_fear === 'yes') {
+                    resultsHTML += '<li><strong>Humanitarian Protection (Asylum):</strong> Your fear of persecution may make you eligible for asylum. <strong>CRITICAL:</strong> This path is extremely complex and affected by changing policies. Seek legal help immediately.</li>';
+                    hasResults = true;
+                }
+
+                if (!hasResults) {
+                    resultsHTML += '<li>Your situation may be complex or fall under other categories like the Diversity Visa. We strongly recommend consulting with an immigration attorney to understand all your options.</li>';
+                }
+
+                resultsHTML += '</ul><p>Click on the tabs above to learn more about each pathway.</p>';
+                wizardResultsDiv.innerHTML = resultsHTML;
+                wizardResultsDiv.classList.remove('hidden');
+            });
+
+
+            // --- Document Checklist Generator Logic ---
+            const generateChecklistBtn = document.getElementById('generate-checklist-btn');
+            const checklistResultsDiv = document.getElementById('checklist-results');
+            
+            const checklists = {
+                'I-130-Spouse': [
+                    'Form I-130, Petition for Alien Relative',
+                    'Proof of Petitioner\'s U.S. Citizenship or LPR status',
+                    'Official Marriage Certificate',
+                    'Proof of termination of any prior marriages (divorce decrees, etc.)',
+                    'Proof of a bona fide (real) marriage (e.g., photos, joint bank statements, joint lease)',
+                    'Passport-style photos of both petitioner and beneficiary'
+                ],
+                'I-130-Parent': [
+                    'Form I-130, Petition for Alien Relative',
+                    'Proof of Petitioner\'s U.S. Citizenship (must be 21+)',
+                    'Petitioner\'s official Birth Certificate showing the parent\'s name',
+                    'Passport-style photos of both petitioner and beneficiary'
+                ],
+                'I-140-EB2': [
+                    'Form I-140, Immigrant Petition for Alien Worker',
+                    'Approved PERM Labor Certification (if required)',
+                    'Proof of advanced degree (e.g., Master\'s, PhD diploma and transcripts)',
+                    'Letters from current or former employers proving relevant work experience',
+                    'Employer\'s ability to pay the proffered wage (e.g., financial statements, annual reports)'
+                ]
+            };
+
+            generateChecklistBtn.addEventListener('click', () => {
+                const selectedPathway = document.getElementById('checklist-pathway').value;
+                if (selectedPathway === 'select') {
+                    checklistResultsDiv.innerHTML = '<p>Please select a pathway from the dropdown menu.</p>';
+                    checklistResultsDiv.classList.remove('hidden');
+                    return;
+                }
+
+                const listItems = checklists[selectedPathway];
+                let resultsHTML = `<h4>General Document Checklist for ${selectedPathway}:</h4><p><strong>Disclaimer:</strong> This is a simplified list. Always refer to the official USCIS form instructions.</p><ul>`;
+
+                listItems.forEach(item => {
+                    resultsHTML += `<li>${item}</li>`;
+                });
+                
+                resultsHTML += '</ul>';
+                checklistResultsDiv.innerHTML = resultsHTML;
+                checklistResultsDiv.classList.remove('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
